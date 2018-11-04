@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.4 on win32)" generated="20181103 18:41:29.271">
+<suite id="s1" name="Eclipse" source="D:\Martin\Documents\Eclipse">
+<suite id="s1-s1" name="MyFirstRobot" source="D:\Martin\Documents\Eclipse\MyFirstRobot">
+<suite id="s1-s1-s1" name="TestSuite1" source="D:\Martin\Documents\Eclipse\MyFirstRobot\TestSuite1.robot">
+<test id="s1-s1-s1-t1" name="Test1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Allo le monde</arg>
+</arguments>
+<status status="PASS" starttime="20181103 18:41:29.392" endtime="20181103 18:41:29.393"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>test2</arg>
+</arguments>
+<msg timestamp="20181103 18:41:29.394" level="INFO">test2</msg>
+<status status="PASS" starttime="20181103 18:41:29.394" endtime="20181103 18:41:29.394"></status>
+</kw>
+<kw name="Calcule" library="mylib">
+<arguments>
+<arg>${10}</arg>
+<arg>${5}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20181103 18:41:29.396" level="INFO">${result} = 15</msg>
+<status status="PASS" starttime="20181103 18:41:29.395" endtime="20181103 18:41:29.396"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20181103 18:41:29.397" endtime="20181103 18:41:29.397"></status>
+</kw>
+<status status="PASS" starttime="20181103 18:41:29.391" endtime="20181103 18:41:29.398" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181103 18:41:29.376" endtime="20181103 18:41:29.399"></status>
+</suite>
+<status status="PASS" starttime="20181103 18:41:29.372" endtime="20181103 18:41:29.401"></status>
+</suite>
+<status status="PASS" starttime="20181103 18:41:29.334" endtime="20181103 18:41:29.403"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Eclipse">Eclipse</stat>
+<stat pass="1" fail="0" id="s1-s1" name="MyFirstRobot">Eclipse.MyFirstRobot</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="TestSuite1">Eclipse.MyFirstRobot.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
