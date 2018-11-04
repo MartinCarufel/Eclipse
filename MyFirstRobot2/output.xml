@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.4 on win32)" generated="20181103 20:45:57.768">
+<suite id="s1" name="MyFirstRobot2" source="D:\Martin\Documents\Eclipse\MyFirstRobot2">
+<suite id="s1-s1" name="TestSuite1" source="D:\Martin\Documents\Eclipse\MyFirstRobot2\TestSuite1.robot">
+<kw name="Run Keyword" library="BuiltIn" type="setup">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Open the Browser</arg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+</arguments>
+<kw name="Open the Browser">
+<arguments>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${urlToOpen}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181103 20:45:58.134" level="INFO">Opening browser 'Chrome' to base url 'http://4testautomation.com/VS2015Test/'.</msg>
+<status status="PASS" starttime="20181103 20:45:58.133" endtime="20181103 20:46:02.705"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181103 20:46:02.707" endtime="20181103 20:46:03.849"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:45:58.132" endtime="20181103 20:46:03.849"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:45:58.131" endtime="20181103 20:46:03.850"></status>
+</kw>
+<test id="s1-s1-t1" name="Test 15 users">
+<kw name="${i} | ${j} IN ZIP [ ${userName} | ${password} ]" type="for">
+<kw name="${i} = Testerselenium1, ${j} = selenium1" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:03.854" level="INFO">Typing text 'Testerselenium1' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:03.853" endtime="20181103 20:46:04.093"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:04.094" level="INFO">Typing text 'selenium1' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:04.094" endtime="20181103 20:46:04.272"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:04.273" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:04.273" endtime="20181103 20:46:04.848"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:03.852" endtime="20181103 20:46:04.849"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:04.851" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium1'.</msg>
+<status status="PASS" starttime="20181103 20:46:04.851" endtime="20181103 20:46:04.919"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:04.849" endtime="20181103 20:46:04.920"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:05.422" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:04.920" endtime="20181103 20:46:05.423"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:05.426" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:05.425" endtime="20181103 20:46:05.844"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:05.424" endtime="20181103 20:46:05.846"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:03.852" endtime="20181103 20:46:05.846"></status>
+</kw>
+<kw name="${i} = Testerselenium2, ${j} = selenium2" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:05.850" level="INFO">Typing text 'Testerselenium2' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:05.848" endtime="20181103 20:46:06.063"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:06.064" level="INFO">Typing text 'selenium2' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:06.064" endtime="20181103 20:46:06.236"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:06.237" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:06.236" endtime="20181103 20:46:06.633"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:05.847" endtime="20181103 20:46:06.634"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:06.638" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium2'.</msg>
+<status status="PASS" starttime="20181103 20:46:06.636" endtime="20181103 20:46:06.690"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:06.635" endtime="20181103 20:46:06.691"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:07.194" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:06.691" endtime="20181103 20:46:07.195"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:07.198" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:07.197" endtime="20181103 20:46:07.560"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:07.195" endtime="20181103 20:46:07.561"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:05.847" endtime="20181103 20:46:07.562"></status>
+</kw>
+<kw name="${i} = Testerselenium3, ${j} = selenium3" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:07.565" level="INFO">Typing text 'Testerselenium3' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:07.564" endtime="20181103 20:46:07.795"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:07.797" level="INFO">Typing text 'selenium3' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:07.796" endtime="20181103 20:46:07.962"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:07.963" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:07.962" endtime="20181103 20:46:08.436"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:07.563" endtime="20181103 20:46:08.437"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:08.439" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium3'.</msg>
+<status status="PASS" starttime="20181103 20:46:08.438" endtime="20181103 20:46:08.491"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:08.437" endtime="20181103 20:46:08.492"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:08.994" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:08.493" endtime="20181103 20:46:08.994"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:08.997" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:08.996" endtime="20181103 20:46:09.379"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:08.995" endtime="20181103 20:46:09.379"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:07.562" endtime="20181103 20:46:09.380"></status>
+</kw>
+<kw name="${i} = Testerselenium4, ${j} = selenium4" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:09.384" level="INFO">Typing text 'Testerselenium4' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:09.383" endtime="20181103 20:46:09.603"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:09.604" level="INFO">Typing text 'selenium4' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:09.603" endtime="20181103 20:46:09.785"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:09.786" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:09.785" endtime="20181103 20:46:10.215"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:09.381" endtime="20181103 20:46:10.216"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:10.218" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium4'.</msg>
+<status status="PASS" starttime="20181103 20:46:10.217" endtime="20181103 20:46:10.269"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:10.216" endtime="20181103 20:46:10.269"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:10.772" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:10.270" endtime="20181103 20:46:10.772"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:10.774" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:10.774" endtime="20181103 20:46:11.742"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:10.773" endtime="20181103 20:46:11.744"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:09.380" endtime="20181103 20:46:11.745"></status>
+</kw>
+<kw name="${i} = Testerselenium5, ${j} = selenium5" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:11.749" level="INFO">Typing text 'Testerselenium5' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:11.748" endtime="20181103 20:46:11.955"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:11.957" level="INFO">Typing text 'selenium5' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:11.956" endtime="20181103 20:46:12.120"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:12.122" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:12.121" endtime="20181103 20:46:12.622"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:11.746" endtime="20181103 20:46:12.623"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:12.625" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium5'.</msg>
+<status status="PASS" starttime="20181103 20:46:12.624" endtime="20181103 20:46:12.676"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:12.624" endtime="20181103 20:46:12.677"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:13.180" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:12.677" endtime="20181103 20:46:13.180"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:13.182" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:13.182" endtime="20181103 20:46:13.550"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:13.181" endtime="20181103 20:46:13.550"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:11.745" endtime="20181103 20:46:13.551"></status>
+</kw>
+<kw name="${i} = Testerselenium6, ${j} = selenium6" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:13.553" level="INFO">Typing text 'Testerselenium6' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:13.553" endtime="20181103 20:46:13.767"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:13.769" level="INFO">Typing text 'selenium6' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:13.768" endtime="20181103 20:46:13.939"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:13.941" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:13.940" endtime="20181103 20:46:14.383"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:13.552" endtime="20181103 20:46:14.384"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:14.387" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium6'.</msg>
+<status status="PASS" starttime="20181103 20:46:14.386" endtime="20181103 20:46:14.449"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:14.385" endtime="20181103 20:46:14.450"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:14.952" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:14.450" endtime="20181103 20:46:14.952"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:14.954" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:14.954" endtime="20181103 20:46:15.331"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:14.953" endtime="20181103 20:46:15.332"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:13.551" endtime="20181103 20:46:15.332"></status>
+</kw>
+<kw name="${i} = Testerselenium7, ${j} = selenium7" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:15.334" level="INFO">Typing text 'Testerselenium7' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:15.334" endtime="20181103 20:46:15.534"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:15.535" level="INFO">Typing text 'selenium7' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:15.534" endtime="20181103 20:46:15.704"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:15.705" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:15.704" endtime="20181103 20:46:16.108"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:15.333" endtime="20181103 20:46:16.109"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:16.114" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium7'.</msg>
+<status status="PASS" starttime="20181103 20:46:16.112" endtime="20181103 20:46:16.168"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:16.110" endtime="20181103 20:46:16.168"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:16.669" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:16.169" endtime="20181103 20:46:16.670"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:16.673" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:16.672" endtime="20181103 20:46:17.052"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:16.671" endtime="20181103 20:46:17.055"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:15.333" endtime="20181103 20:46:17.055"></status>
+</kw>
+<kw name="${i} = Testerselenium8, ${j} = selenium8" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:17.058" level="INFO">Typing text 'Testerselenium8' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:17.058" endtime="20181103 20:46:17.257"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:17.260" level="INFO">Typing text 'selenium8' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:17.258" endtime="20181103 20:46:17.429"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:17.431" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:17.430" endtime="20181103 20:46:17.835"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:17.057" endtime="20181103 20:46:17.836"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:17.838" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium8'.</msg>
+<status status="PASS" starttime="20181103 20:46:17.837" endtime="20181103 20:46:17.893"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:17.836" endtime="20181103 20:46:17.893"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:18.395" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:17.894" endtime="20181103 20:46:18.396"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:18.400" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:18.399" endtime="20181103 20:46:18.786"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:18.397" endtime="20181103 20:46:18.787"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:17.056" endtime="20181103 20:46:18.787"></status>
+</kw>
+<kw name="${i} = Testerselenium9, ${j} = selenium9" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:18.792" level="INFO">Typing text 'Testerselenium9' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:18.791" endtime="20181103 20:46:18.999"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:19.000" level="INFO">Typing text 'selenium9' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:18.999" endtime="20181103 20:46:19.161"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:19.162" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:19.161" endtime="20181103 20:46:19.564"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:18.789" endtime="20181103 20:46:19.565"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:19.568" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium9'.</msg>
+<status status="PASS" starttime="20181103 20:46:19.567" endtime="20181103 20:46:19.622"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:19.565" endtime="20181103 20:46:19.623"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:20.124" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:19.624" endtime="20181103 20:46:20.125"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:20.128" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:20.127" endtime="20181103 20:46:20.535"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:20.126" endtime="20181103 20:46:20.536"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:18.788" endtime="20181103 20:46:20.536"></status>
+</kw>
+<kw name="${i} = Testerselenium10, ${j} = selenium10" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:20.539" level="INFO">Typing text 'Testerselenium10' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:20.538" endtime="20181103 20:46:20.748"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:20.749" level="INFO">Typing text 'selenium10' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:20.749" endtime="20181103 20:46:20.914"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:20.916" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:20.915" endtime="20181103 20:46:21.339"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:20.537" endtime="20181103 20:46:21.340"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:21.344" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium10'.</msg>
+<status status="PASS" starttime="20181103 20:46:21.342" endtime="20181103 20:46:21.397"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:21.341" endtime="20181103 20:46:21.397"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:21.899" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:21.398" endtime="20181103 20:46:21.900"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:21.903" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:21.902" endtime="20181103 20:46:22.278"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:21.901" endtime="20181103 20:46:22.279"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:20.537" endtime="20181103 20:46:22.280"></status>
+</kw>
+<kw name="${i} = Testerselenium11, ${j} = selenium11" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:22.282" level="INFO">Typing text 'Testerselenium11' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:22.282" endtime="20181103 20:46:22.499"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:22.500" level="INFO">Typing text 'selenium11' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:22.500" endtime="20181103 20:46:22.666"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:22.668" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:22.667" endtime="20181103 20:46:23.070"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:22.281" endtime="20181103 20:46:23.072"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:23.075" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium11'.</msg>
+<status status="PASS" starttime="20181103 20:46:23.074" endtime="20181103 20:46:23.131"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:23.072" endtime="20181103 20:46:23.132"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:23.634" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:23.133" endtime="20181103 20:46:23.635"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:23.639" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:23.638" endtime="20181103 20:46:24.020"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:23.636" endtime="20181103 20:46:24.021"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:22.280" endtime="20181103 20:46:24.021"></status>
+</kw>
+<kw name="${i} = Testerselenium12, ${j} = selenium12" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:24.024" level="INFO">Typing text 'Testerselenium12' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:24.023" endtime="20181103 20:46:24.225"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:24.226" level="INFO">Typing text 'selenium12' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:24.225" endtime="20181103 20:46:24.390"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:24.391" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:24.391" endtime="20181103 20:46:24.779"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:24.022" endtime="20181103 20:46:24.780"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:24.784" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium12'.</msg>
+<status status="PASS" starttime="20181103 20:46:24.783" endtime="20181103 20:46:24.834"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:24.781" endtime="20181103 20:46:24.835"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:25.338" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:24.835" endtime="20181103 20:46:25.338"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:25.342" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:25.341" endtime="20181103 20:46:25.734"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:25.339" endtime="20181103 20:46:25.735"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:24.022" endtime="20181103 20:46:25.735"></status>
+</kw>
+<kw name="${i} = Testerselenium13, ${j} = selenium13" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:25.741" level="INFO">Typing text 'Testerselenium13' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:25.738" endtime="20181103 20:46:25.938"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:25.939" level="INFO">Typing text 'selenium13' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:25.938" endtime="20181103 20:46:26.101"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:26.102" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:26.102" endtime="20181103 20:46:26.488"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:25.737" endtime="20181103 20:46:26.489"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:26.492" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium13'.</msg>
+<status status="PASS" starttime="20181103 20:46:26.491" endtime="20181103 20:46:26.546"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:26.490" endtime="20181103 20:46:26.547"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:27.048" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:26.548" endtime="20181103 20:46:27.049"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:27.054" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:27.052" endtime="20181103 20:46:27.432"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:27.050" endtime="20181103 20:46:27.433"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:25.736" endtime="20181103 20:46:27.433"></status>
+</kw>
+<kw name="${i} = Testerselenium14, ${j} = selenium14" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:27.436" level="INFO">Typing text 'Testerselenium14' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:27.435" endtime="20181103 20:46:27.659"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:27.660" level="INFO">Typing text 'selenium14' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:27.659" endtime="20181103 20:46:27.818"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:27.819" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:27.819" endtime="20181103 20:46:28.220"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:27.434" endtime="20181103 20:46:28.221"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:28.224" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium14'.</msg>
+<status status="PASS" starttime="20181103 20:46:28.223" endtime="20181103 20:46:28.274"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:28.222" endtime="20181103 20:46:28.274"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:28.776" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:28.275" endtime="20181103 20:46:28.777"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:28.779" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:28.778" endtime="20181103 20:46:29.149"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:28.777" endtime="20181103 20:46:29.150"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:27.434" endtime="20181103 20:46:29.150"></status>
+</kw>
+<kw name="${i} = Testerselenium15, ${j} = selenium15" type="foritem">
+<kw name="Login">
+<arguments>
+<arg>${i}</arg>
+<arg>${j}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_UserName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:29.154" level="INFO">Typing text 'Testerselenium15' into text field 'MainContent_LoginUser_UserName'.</msg>
+<status status="PASS" starttime="20181103 20:46:29.154" endtime="20181103 20:46:29.366"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_Password</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:29.367" level="INFO">Typing text 'selenium15' into text field 'MainContent_LoginUser_Password'.</msg>
+<status status="PASS" starttime="20181103 20:46:29.367" endtime="20181103 20:46:29.529"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_LoginUser_LoginButton</arg>
+</arguments>
+<msg timestamp="20181103 20:46:29.531" level="INFO">Clicking button 'MainContent_LoginUser_LoginButton'.</msg>
+<status status="PASS" starttime="20181103 20:46:29.530" endtime="20181103 20:46:29.918"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:29.152" endtime="20181103 20:46:29.920"></status>
+</kw>
+<kw name="Check user">
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginName</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20181103 20:46:29.923" level="INFO">Verifying element 'HeadLoginView_HeadLoginName' contains exact text 'Testerselenium15'.</msg>
+<status status="PASS" starttime="20181103 20:46:29.922" endtime="20181103 20:46:29.974"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:29.921" endtime="20181103 20:46:29.975"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:30.476" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20181103 20:46:29.975" endtime="20181103 20:46:30.476"></status>
+</kw>
+<kw name="Logout">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>HeadLoginView_HeadLoginStatus</arg>
+</arguments>
+<msg timestamp="20181103 20:46:30.479" level="INFO">Clicking link 'HeadLoginView_HeadLoginStatus'.</msg>
+<status status="PASS" starttime="20181103 20:46:30.478" endtime="20181103 20:46:30.853"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:30.477" endtime="20181103 20:46:30.854"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:29.151" endtime="20181103 20:46:30.854"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:03.851" endtime="20181103 20:46:30.854"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:03.850" endtime="20181103 20:46:30.855" critical="yes"></status>
+</test>
+<kw name="Close the Browser" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20181103 20:46:35.860" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20181103 20:46:30.857" endtime="20181103 20:46:35.861"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181103 20:46:35.862" endtime="20181103 20:46:38.151"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:46:30.857" endtime="20181103 20:46:38.152"></status>
+</kw>
+<status status="PASS" starttime="20181103 20:45:57.866" endtime="20181103 20:46:38.153"></status>
+</suite>
+<status status="PASS" starttime="20181103 20:45:57.830" endtime="20181103 20:46:38.161"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="MyFirstRobot2">MyFirstRobot2</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TestSuite1">MyFirstRobot2.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

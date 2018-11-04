@@ -3,6 +3,7 @@
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
     <referencedLibrary type="PYTHON" name="mylib" path="MyFirstRobot"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/marti/AppData/Local/Programs/Python/Python36-32/Lib/site-packages"/>
     <pythonpath/>
     <classpath/>
     <excludedForValidation/>
