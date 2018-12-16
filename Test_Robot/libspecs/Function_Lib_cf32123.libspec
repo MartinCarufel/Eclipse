@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="Function_Lib" type="library" format="ROBOT" generated="20181216 00:57:58">
+<version></version>
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for test library ``Function_Lib``.</doc>
+<kw name="Add To File">
+<arguments>
+<arg>fileobj</arg>
+<arg>text</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Additionne">
+<arguments>
+<arg>*arg</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Create Log File">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Greet Person">
+<arguments>
+<arg>sPersonName</arg>
+</arguments>
+<doc>says hello</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Print Screen">
+<arguments>
+<arg>text</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Test 1">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
