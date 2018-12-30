@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec name="Telnet" type="library" format="ROBOT" generated="20181103 17:24:32">
-<version>3.0.4</version>
+<keywordspec name="Telnet" type="library" format="ROBOT" generated="20181215 07:56:14">
+<version>3.0.2</version>
 <scope>test suite</scope>
 <namedargs>yes</namedargs>
 <doc>A test library providing communication over Telnet connections.
@@ -189,7 +189,7 @@ New in Robot Framework 2.8.2.
 = Terminal emulation =
 
 Starting from Robot Framework 2.8.2, Telnet library supports terminal
-emulation with [https://pyte.readthedocs.io|Pyte]. Terminal emulation
+emulation with [https://github.com/selectel/pyte|Pyte]. Terminal emulation
 will process the output in a virtual screen. This means that ANSI escape
 codes, like cursor movements, and also control characters, like
 carriage returns and backspaces, have the same effect on the result as they
@@ -208,18 +208,12 @@ the window row length.
 When terminal emulation is used, the `newline` and `encoding` can not be
 changed anymore after opening the connection.
 
+As a prerequisite for using terminal emulation you need to have
+[https://github.com/selectel/pyte|Pyte] installed. This is easiest done
+with [http://pip-installer.org|pip] by running ``pip install pyte``.
+
 Examples:
 | `Open Connection` | lolcathost | terminal_emulation=True | terminal_type=vt100 | window_size=400x100 |
-
-As a prerequisite for using terminal emulation, you need to have Pyte
-installed. Due to backwards incompatible changes in Pyte, different
-Robot Framework versions support different Pyte versions:
-
-- Pyte 0.6 and newer are supported by Robot Framework 3.0.3.
-  Latest Pyte version can be installed (or upgraded) with
-  ``pip install --upgrade pyte``.
-- Pyte 0.5.2 and older are supported by Robot Framework 3.0.2 and earlier.
-  Pyte 0.5.2 can be installed with ``pip install pyte==0.5.2``.
 
 = Logging =
 
@@ -252,9 +246,9 @@ The time string format is described in more detail in an appendix of
 
 Some keywords accept arguments that are handled as Boolean values true or
 false. If such an argument is given as a string, it is considered false if
-it is either an empty string or case-insensitively equal to ``false``,
-``none`` or ``no``. Other strings are considered true regardless
-their value, and other argument types are tested using the same
+it is either empty or case-insensitively equal to ``false`` or ``no``.
+Other strings are considered true regardless their value, and other
+argument types are tested using same
 [http://docs.python.org/2/library/stdtypes.html#truth-value-testing|rules
 as in Python].
 
@@ -270,9 +264,8 @@ False examples:
 | `Open Connection` | lolcathost | terminal_emulation=${EMPTY} | # Empty string is false.       |
 | `Open Connection` | lolcathost | terminal_emulation=${FALSE} | # Python ``False`` is false.   |
 
-Prior to Robot Framework 2.9, all non-empty strings, including ``false``
-and ``no``, were considered to be true. Considering ``none`` false is
-new in Robot Framework 3.0.3.</doc>
+Note that prior to Robot Framework 2.9 some keywords considered all
+non-empty strings, including ``false`` and ``no``, to be true.</doc>
 <init>
 <arguments>
 <arg>timeout=3 seconds</arg>

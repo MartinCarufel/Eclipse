@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.4 on win32)" generated="20181216 00:58:38.831">
+<suite id="s1" name="Test Robot" source="D:\Martin\eclipse-workspace\Test_Robot">
+<suite id="s1-s1" name="TestSuite1" source="D:\Martin\eclipse-workspace\Test_Robot\TestSuite1.robot">
+<test id="s1-s1-t1" name="testcase1">
+<kw name="Test 1" library="Function_Lib">
+<msg timestamp="20181216 00:58:38.940" level="FAIL">bad command</msg>
+<status status="FAIL" starttime="20181216 00:58:38.940" endtime="20181216 00:58:38.940"></status>
+</kw>
+<status status="FAIL" starttime="20181216 00:58:38.924" endtime="20181216 00:58:38.940" critical="yes">bad command</status>
+</test>
+<status status="FAIL" starttime="20181216 00:58:38.924" endtime="20181216 00:58:38.940"></status>
+</suite>
+<status status="FAIL" starttime="20181216 00:58:38.878" endtime="20181216 00:58:38.940"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test Robot">Test Robot</stat>
+<stat pass="0" fail="1" id="s1-s1" name="TestSuite1">Test Robot.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
