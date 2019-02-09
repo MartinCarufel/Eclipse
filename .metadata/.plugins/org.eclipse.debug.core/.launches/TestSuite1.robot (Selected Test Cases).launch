@@ -17,7 +17,7 @@
 <stringAttribute key="Remote agent" value="false"/>
 <stringAttribute key="Robot arguments" value=""/>
 <mapAttribute key="Test suites">
-<mapEntry key="TestSuite1.robot" value="test1"/>
+<mapEntry key="TestSuite1.robot" value="01-testa"/>
 </mapAttribute>
 <stringAttribute key="Version of configuration" value="1"/>
 <mapAttribute key="org.eclipse.debug.core.environmentVariables">

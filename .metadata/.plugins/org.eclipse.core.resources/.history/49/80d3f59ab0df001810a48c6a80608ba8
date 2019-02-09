@@ -1,4 +1,0 @@
-*** Test Cases ***
-Test1
-    Log To Console    Allo le monde
-    log    test    
