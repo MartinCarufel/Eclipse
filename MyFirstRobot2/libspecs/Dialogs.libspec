@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec name="Dialogs" type="library" format="ROBOT" generated="20181103 17:24:35">
-<version>3.0.4</version>
+<keywordspec name="Dialogs" type="library" format="ROBOT" generated="20181215 07:56:14">
+<version>3.0.2</version>
 <scope>global</scope>
 <namedargs>yes</namedargs>
 <doc>A test library providing dialogs for interacting with users.
@@ -65,8 +65,8 @@ the possible default value shown in the input field.
 
 If ``hidden`` is given a true value, the value typed by the user is hidden.
 ``hidden`` is considered true if it is a non-empty string not equal to
-``false``, ``none`` or ``no``, case-insensitively. If it is not a string,
-its truth value is got directly using same
+``false`` or ``no``, case-insensitively. If it is not a string, its truth
+value is got directly using same
 [http://docs.python.org/2/library/stdtypes.html#truth-value-testing|rules
 as in Python].
 
@@ -75,8 +75,7 @@ Example:
 | ${password} = | Get Value From User | Input password  | hidden=yes |
 
 Possibility to hide the typed in value is new in Robot Framework 2.8.4.
-Considering strings ``false`` and ``no`` to be false is new in RF 2.9
-and considering string ``none`` false is new in RF 3.0.3.</doc>
+Considering strings ``false`` and ``no`` to be false is new in 2.9.</doc>
 <tags>
 </tags>
 </kw>
