@@ -13,7 +13,7 @@ class Function_Lib():
 #         except:
 #             raise 'Ca va mal'
         if(True):
-            raise Exception('bad command')
+            raise Exception('Use following command instead')
             
         
     

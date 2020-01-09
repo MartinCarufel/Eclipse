@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<keywordspec name="Easter" type="library" format="ROBOT" generated="20181216 07:52:04">
+=======
+<<<<<<< HEAD
 <keywordspec name="Easter" type="library" format="ROBOT" generated="20181215 23:27:53">
 =======
 <keywordspec name="Easter" type="library" format="ROBOT" generated="20181229 19:30:06">
 >>>>>>> 3345a4fa2a9a71289221b9d040e9b01aa5f7bd73
+>>>>>>> e2f15ca55ef19adb6f79e694138056b0a927bd85
 <version></version>
 <scope>global</scope>
 <namedargs>yes</namedargs>

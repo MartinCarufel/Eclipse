@@ -3,6 +3,7 @@
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
     <referencedLibrary type="PYTHON" name="mylib" path="MyFirstRobot"/>
+    <referencedLibrary type="PYTHON" name="Function_Lib" path="pythonLib"/>
     <pythonpath/>
     <classpath/>
     <excludedForValidation/>
