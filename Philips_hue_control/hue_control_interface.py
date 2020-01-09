@@ -19,9 +19,9 @@ def turnOff():
     test_light.on = False
     
 
-b = Bridge('10.0.0.2')
+b = Bridge('192.168.1.17')
 lights = b.lights
-test_light = Light(b, 5)
+test_light = Light(b, "Sous-sol A2")
 test_light.colortemp_k = 3800
 test_light.on = True
 

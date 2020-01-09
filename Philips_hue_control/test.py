@@ -55,9 +55,19 @@ def flash(on_time, off_time, nb_flash):
         sleep(off_time)
     y = time()
     print(y-x)
-b = Bridge('10.0.0.2')
+b = Bridge('192.168.1.17')
 lights = b.lights
-test_light = Light(b, 5)
-color = [1, 6000, 12000, 18000, 24000, 30000, 36000, 42000, 48000, 52000]
+
+print(lights)
+
+test_light = Light(b, "Sous-sol A2")
+test_light.brightness = 0
+sleep(2)
+test_light.brightness = 254
+sleep(2)
+test_light.brightness = 0
+sleep(2)
+test_light.brightness = 254
+# color = [1, 6000, 12000, 18000, 24000, 30000, 36000, 42000, 48000, 52000]
 #colorChange(0, 3, color)
-flash(0.1, 0.1, 100)
+# flash(1, 1, 30)

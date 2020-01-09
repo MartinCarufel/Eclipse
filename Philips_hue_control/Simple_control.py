@@ -37,14 +37,14 @@ def setBright():
 
 
 
-b = Bridge('10.0.0.2')
+b = Bridge('192.168.1.17')
 lights = b.lights
 
 #listLumiere()
 
-bureau1 = Light(b, 1)
-bureau2 = Light(b, 2)
-test_light = Light(b, 5)
+bureau1 = Light(b, 'Sous-sol A1')
+bureau2 = Light(b, 'Sous-sol A2')
+test_light = Light(b, 'Sous-sol A1')
 test_light.on = False
 test_light.on = True
 test_light.brightness = 254
@@ -53,6 +53,7 @@ test_light.saturation = 254
 #colorLoop()
 while (True):
     colorSwitch()
+#     colorLoop()
 
     
 #bureau1.on = False
